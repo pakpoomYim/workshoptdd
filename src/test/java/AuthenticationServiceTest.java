@@ -13,7 +13,7 @@ public class AuthenticationServiceTest {
 	@Test public void 
 	username_not_existed() {
 		AuthenticationService authenticationService = new AuthenticationService(new NullUserDao());
-		assertFalse(authenticationService.isUsernameExisted("SOMKIAT"));
+		assertTrue(authenticationService.isUsernameExisted("SOMKIAT"));
 	}
 	
 }
